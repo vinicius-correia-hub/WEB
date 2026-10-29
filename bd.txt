@@ -1,0 +1,3 @@
+{"nome":"vinicius","ra":"195444","sexo":"masculino","idade":"24","endereco":"liesdasd","telefone":"19981150428","email":"vinicius@gmail.com","data_cadastro":"2026-10-29 00:34:39"}
+{"nome":"joanutia","ra":"1233213","sexo":"feminino","idade":"132","endereco":"asdaf","telefone":"19298761238","email":"juanito@gamoes","data_cadastro":"2026-10-29 00:39:49"}
+{"nome":"vinicius","ra":"195444","sexo":"masculino","idade":"123","endereco":"rua abraham denis da silva","telefone":"19982563258","email":"jacksonmichael@hotmail.com","data_cadastro":"2026-10-29 00:43:51"}
