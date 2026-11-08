@@ -7,6 +7,7 @@
 </head>
 <body>
 
+    <!-- Formulário de cadastro de alunos -->
     <h1>Formulário de cadastro</h1>
     <a href="exibicao.php">Exibicao</a>
     <form method="POST">
@@ -38,6 +39,8 @@
 
     </form>
 
+
+    <!-- Processando o formulário e salvando os dados no arquivo bd.txt -->
     <?php
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
         
@@ -68,6 +71,9 @@
 
     $linha = json_encode($novoAluno) . PHP_EOL; //adicionar uma linha após a inserção no arquivo txt
 
+    //salvando os dados no arquivo bd.txt.
+    //FILE_APPEND adiciona o conteúdo ao final do arquivo. 
+    //É semelhante a utilizar o modo de abertura "a" no fopen() e fwrite().
     file_put_contents('bd.txt', $linha, FILE_APPEND);   
 }
 ?>
