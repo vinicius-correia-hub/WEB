@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Formulário</title>
 </head>
 <body>
 
-    <!-- Formulário de cadastro de alunos -->
-    <h1>Formulário de cadastro</h1>
-    <a href="exibicao.php">Exibicao</a>
-    <form method="POST">
+<div class="container">
+
+    <nav class="menu">
+        <h1>Sistema de Cadastro de Alunos</h1>
+
+        <ul>
+            <li><a href="formulario.php" class="link">Cadastro</a></li>
+            <li><a href="exibicao.php" class="link">Exibição</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo">
+        <h1>Formulário de Cadastro</h1>
+
+        <form method="POST">
         <label>Nome</label>
         <input type="text" name="nome" required> <br><br>
 
@@ -24,7 +36,7 @@
         <label for="feminino">Feminino</label> <br><br>
 
         <label>Idade: </label>
-        <input type="nmber" name="idade" required> <br><br>
+        <input type="number" name="idade"> <br><br>
 
         <label>Endereço: </label>
         <input type="text" name="endereco" required> <br><br>
@@ -39,8 +51,11 @@
 
     </form>
 
+    </main>   
+</div>
 
     <!-- Processando o formulário e salvando os dados no arquivo bd.txt -->
+     
     <?php
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
         
